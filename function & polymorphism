@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+float area(int);
+float area(int,int);
+int main()
+{
+    int r;
+    cout<<"Enter the radius of circle\n";
+    cin>>r;
+    cout<<"The area of circle "<<area(r);
+    int l,b;
+    cout<<"\nEnter the length and breadth of triangle\n";
+    cin>>l>>b;
+    cout<<"The area of triangle is "<<area(l,b);
+    return 0;
+}
+float area(int r)
+{
+    return 3.14*r*r;
+}
+float area(int l,int b)
+{
+    return 0.5*l*b;
+}
